@@ -15,4 +15,5 @@ function block() {
     document.addEventListener('cut', e => e.preventDefault(), true);
     document.addEventListener('copy', e => e.preventDefault(), true);
     document.addEventListener('paste', e => e.preventDefault(), true);
+    document.body.style.userSelect = "none";
 }
