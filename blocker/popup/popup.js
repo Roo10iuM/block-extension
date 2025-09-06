@@ -1,5 +1,3 @@
-//interface
-
 function ON() {
     const on = document.getElementById("ON");
     const off = document.getElementById("OFF");
@@ -45,4 +43,3 @@ window.onload = () => {
         );
     }
 }
-
