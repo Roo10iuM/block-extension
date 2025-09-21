@@ -31,7 +31,7 @@ function block() {
     document.addEventListener('scroll', blankScreen);
     document.body.style.userSelect = "none";
 
-    document.addEventListener('beforeprint', _ => console.log("before"));
+    window.addEventListener('beforeprint', restoreVisible);
 
 
     function blankScreen() {
@@ -55,7 +55,6 @@ function block() {
                 element.style.opacity = 0;
             }
         });
-        console.log("protected")
     }
 
     function preventAccessToText(e) {
