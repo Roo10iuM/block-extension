@@ -37,7 +37,7 @@ function block() {
     function blankScreen() {
         if (activityTimer) clearTimeout(activityTimer);
         applyProtectiveStyle();
-        activityTimer = setTimeout(restoreVisible, 1000);
+        activityTimer = setTimeout(restoreVisible, 3000);
     }
 
     function restoreVisible() {
@@ -61,31 +61,24 @@ function block() {
         let ctrlKey = e.ctrlKey || e.metaKey;
         if (ctrlKey && e.key === 's') {
             e.preventDefault();
-            return
         }
         if (ctrlKey && e.shiftKey && e.key === 'S') {
             e.preventDefault();
-            return
         }
         if (e.key === 'PrintScreen') {
             e.preventDefault();
-            return
         }
         if (ctrlKey && e.key === 'u') {
             e.preventDefault();
-            return
         }
         if (e.key === 'F12') {
             e.preventDefault();
-            return
         }
         if (ctrlKey && e.shiftKey && e.key === 'I') {
             e.preventDefault();
-            return
         }
         if (ctrlKey && e.shiftKey && e.key === 'C') {
             e.preventDefault();
-            return
         }
     }
 }

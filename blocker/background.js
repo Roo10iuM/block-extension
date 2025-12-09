@@ -12,6 +12,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     } 
 
     if (request.action === "toggleState") {
+        console.log(state)
         state = state === "ON" ? "OFF" : "ON";
         chrome.action.setBadgeText({
             text: state,
